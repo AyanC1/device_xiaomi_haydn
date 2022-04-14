@@ -13,9 +13,13 @@ $(call inherit-product, device/xiaomi/haydn/device.mk)
 
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+#TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_WIDTH := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aicp_haydn
